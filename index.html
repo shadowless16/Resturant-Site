@@ -9,13 +9,17 @@
 <body>
     <header>
         <div class="container">
-            <h1>Delicious Restaurant</h1>
+            <div class="logo">
+                <h1>Delicious<span>Restaurant</span></h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservation" class="btn-reserve">Reserve a Table</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,8 +27,8 @@
 
     <section id="home" class="home-section">
         <div class="home-content">
-            <h2>Welcome to Delicious Restaurant</h2>
-            <p>Experience the best dining with a variety of cuisines and an amazing atmosphere.</p>
+            <h2>Welcome to <br><span>Delicious Restaurant</span></h2>
+            <p>Where every bite is a delight!</p>
             <a href="#menu" class="btn">Explore Our Menu</a>
         </div>
     </section>
@@ -32,29 +36,34 @@
     <section id="menu" class="menu-section">
         <div class="container">
             <h2>Our Menu</h2>
-            <div class="menu-item">
-                <h3>Appetizers</h3>
-                <ul>
-                    <li>Spring Rolls - ₦2,000</li>
-                    <li>Garlic Bread - ₦1,500</li>
-                    <li>Bruschetta - ₦2,500</li>
-                </ul>
-            </div>
-            <div class="menu-item">
-                <h3>Main Course</h3>
-                <ul>
-                    <li>Grilled Chicken - ₦5,000</li>
-                    <li>Steak - ₦8,500</li>
-                    <li>Vegetarian Pasta - ₦4,500</li>
-                </ul>
-            </div>
-            <div class="menu-item">
-                <h3>Desserts</h3>
-                <ul>
-                    <li>Chocolate Cake - ₦3,000</li>
-                    <li>Ice Cream - ₦2,000</li>
-                    <li>Tiramisu - ₦3,500</li>
-                </ul>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="appetizer.jpg" alt="Appetizers">
+                    <h3>Appetizers</h3>
+                    <ul>
+                        <li>Spring Rolls - ₦2,000</li>
+                        <li>Garlic Bread - ₦1,500</li>
+                        <li>Bruschetta - ₦2,500</li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <img src="main-course.jpg" alt="Main Course">
+                    <h3>Main Course</h3>
+                    <ul>
+                        <li>Grilled Chicken - ₦5,000</li>
+                        <li>Steak - ₦8,500</li>
+                        <li>Vegetarian Pasta - ₦4,500</li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <img src="dessert.jpg" alt="Desserts">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Chocolate Cake - ₦3,000</li>
+                        <li>Ice Cream - ₦2,000</li>
+                        <li>Tiramisu - ₦3,500</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -62,8 +71,62 @@
     <section id="about" class="about-section">
         <div class="container">
             <h2>About Us</h2>
-            <p>At Delicious Restaurant, we pride ourselves on delivering top-notch culinary experiences. Our chefs are passionate about creating mouth-watering dishes using fresh ingredients.</p>
-            <p>Whether you're here for a quick bite or a full-course meal, we ensure every visit is memorable.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="restaurant-interior.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <p>Delicious Restaurant is the perfect place to enjoy fine dining in a relaxed and comfortable setting. Our chefs use only the freshest ingredients to create dishes that are both innovative and traditional.</p>
+                    <p>Whether you are joining us for a casual lunch or an intimate dinner, we promise an experience that will delight your senses and satisfy your culinary cravings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"The food was absolutely amazing, and the atmosphere was perfect for our date night. We'll definitely be back!"</p>
+                    <span>- Jane Doe</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Fantastic service and delicious food! The steak was cooked to perfection. Highly recommend!"</p>
+                    <span>- John Smith</span>
+                </div>
+                <div class="testimonial">
+                    <p>"A wonderful dining experience from start to finish. The dessert was to die for!"</p>
+                    <span>- Emily Brown</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Reserve a Table</h2>
+            <form class="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <input type="submit" value="Reserve Now">
+            </form>
         </div>
     </section>
 
